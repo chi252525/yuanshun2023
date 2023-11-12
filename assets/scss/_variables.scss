@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap');
+//google  思源黑體
+
+$primary:#40659b;
+$primary-hover:#1B1BEF;
+$bg_primary:#DFE4E5;
+
+%clearfix{
+    &:after{
+        content:'';
+        display:table;
+        clear:both;
+    }
+}
+
