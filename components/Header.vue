@@ -1,58 +1,29 @@
 <template>
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a class="navbar-item" href="https://bulma.io">
-      <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-    </a>
-
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-
-  <div id="navbarBasicExample" class="navbar-menu">
-    <div class="navbar-start">
-      <a class="navbar-item">
-        圓順團隊
-      </a>
-
-      <a class="navbar-item">
-        服務流程
-      </a>
-      <a class="navbar-item">
-        設計作品
-      </a>
-      <a class="navbar-item">
-        聯絡資訊
-      </a>
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More
-        </a>
-
-        <div class="navbar-dropdown">
-          <a class="navbar-item">
-            About
-          </a>
-          <a class="navbar-item">
-            Jobs
-          </a>
-          <a class="navbar-item">
-            Contact
-          </a>
-          <hr class="navbar-divider">
-          <a class="navbar-item">
-            Report an issue
-          </a>
-        </div>
-      </div>
-    </div>
-
-   
-  </div>
-</nav>
+<div>
+  <b-navbar toggleable="lg" type="dark" variant="dark">
+    <b-navbar-brand href="#">
+      <img src="https://hemusih.com/yuan-shun-interior-design/images/yuan/logo2.png" width="130" class="d-inline-block align-top" alt="Kitten">
+    </b-navbar-brand>
+    <ul class="nav justify-content-center align-item-end">
+ 
+  <li class="nav-item">
+    <a class="nav-link" href="#">關於圓順</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">風水服務</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link">設計作品</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link">服務流程</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link">聯絡我們</a>
+  </li>
+</ul>
+  </b-navbar>
+</div>
 </template>
 <style>
 </style>
