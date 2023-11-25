@@ -1,2 +1,4 @@
 @import '_variables';
-@import '~bulma';
+//bootstrap 編譯
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~bootstrap-vue/src/index.scss';
