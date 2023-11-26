@@ -3,7 +3,7 @@
         <div class="mt-5 mb-5">
             <Title titleEng="About FengShui" titleCh="關於風水"></Title>
         </div>
-        <div class="mt-5 mb-5">
+        <div class="mt-5 mb-5 text-center">
             <p> 風水是一門古老的學問，先人用這門學問來觀察大自然的環境，</p>
     
             <p>並在這些環境中設計宅邸、廳堂、甚至是墓穴等，以實現人與自然的和諧與平衡。</p>
@@ -13,7 +13,7 @@
             </p>
     
         </div>
-        <div class="mt-5 mb-5">
+        <div class="mt-5 mb-5 text-center">
     
             <p>風水起源於道家對於“氣”的信仰，或者說是存在於一切事物中的生命力量。氣由陰陽元素組成，</p>
     
@@ -23,7 +23,7 @@
     
             <p>古代中國人相信，整理事物以創造正面氣，可以確保身體健康，改善人際關係，並帶來幸運和繁榮。</p>
         </div>
-        <div class="mt-5 mb-5">
+        <div class="mt-5 mb-5 text-center">
     
             <p>儘管我們對風水的起源了解有限，但有證據表明，中國人已經在使用風水原則設計他們的家園和城鎮，</p>
     
