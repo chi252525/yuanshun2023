@@ -2,7 +2,7 @@
     <b-container>
         <BreadCrumb currentBread="Fengshui" pageName="fengshui"></BreadCrumb>
         <div class="mt-5 mb-5">
-            <Title titleEng="About FengShui" titleCh="關於風水"></Title>
+            <Title titleEng="About" subTitle="FengShui" titleCh="關於風水"></Title>
         </div>
         <div class="mt-5 mb-5 text-center">
             <p> 風水是一門古老的學問，先人用這門學問來觀察大自然的環境，</p>
