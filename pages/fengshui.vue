@@ -1,5 +1,6 @@
 <template>
     <b-container>
+        <BreadCrumb currentBread="Fengshui" pageName="fengshui"></BreadCrumb>
         <div class="mt-5 mb-5">
             <Title titleEng="About FengShui" titleCh="關於風水"></Title>
         </div>
@@ -42,9 +43,11 @@
 
 <script>
 import Title from '~/components/Title.vue'
+import BreadCrumb from '~/components/BreadCrumb.vue'
 export default {
     components: {
-        Title
+        Title,
+        BreadCrumb
     }
 }
 </script>

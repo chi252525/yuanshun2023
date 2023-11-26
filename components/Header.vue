@@ -1,12 +1,12 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" type="dark" variant="dark">
+    <b-navbar toggleable="lg">
       <b-navbar-brand href="#">
         <nuxt-link :to="{ name: 'index' }">
           <img src="https://hemusih.com/yuan-shun-interior-design/images/yuan/logo2.png" width="130"
-          class="d-inline-block align-top" alt="Kitten">
-            </nuxt-link>
-      
+            class="d-inline-block align-top" alt="Kitten">
+        </nuxt-link>
+
       </b-navbar-brand>
       <b-navbar-toggle target="navbar-toggle-collapse">
         <template #default="{ expanded }">
@@ -17,29 +17,9 @@
       <!-- Right aligned nav items -->
       <b-collapse id="navbar-toggle-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
-          <b-nav-item right>
-            <nuxt-link :to="{ name: 'about' }">
-              關於圓順
-            </nuxt-link>
-          </b-nav-item>
-          <b-nav-item right>
-            <nuxt-link :to="{ name: 'fengshui' }">
-              風水服務
-            </nuxt-link>
-          </b-nav-item>
-          <b-nav-item right>
-            <nuxt-link :to="{ name: 'collection' }">
-              設計作品
-            </nuxt-link>
-          </b-nav-item>
-          <b-nav-item right>
-            <nuxt-link :to="{ name: 'service' }">
-              服務流程
-            </nuxt-link>
-          </b-nav-item>
-          <b-nav-item right>
-            <nuxt-link :to="{ name: 'contact' }">
-              聯絡我們
+          <b-nav-item v-for="m in menus" :menu="m" :key="m.id" right>
+            <nuxt-link :to="{ name: m.name }">
+              <span> {{ m.nameCh }}</span>
             </nuxt-link>
           </b-nav-item>
         </b-navbar-nav>
@@ -47,6 +27,35 @@
     </b-navbar>
   </div>
 </template>
-<style></style>
+
+<style scoped>
+.navbar {
+  background-color: black !important
+}
+
+a,
+a:hover {
+  color: #ffffff;
+}
+</style>
+
 <script>
+export default {
+  data() {
+    return {
+      menus: [
+        { id: 1, name: "about", nameCh: "關於圓順", nameEng: "About", showName: "A" },
+        { id: 2, name: "fengshui", nameCh: "風水服務", nameEng: "About Fengshui", showName: "A" },
+        { id: 3, name: "collection", nameCh: "設計作品", nameEng: "Project", showName: "A" },
+        { id: 4, name: "service", nameCh: "服務流程", nameEng: "service", showName: "A" },
+        { id: 5, name: "contact", nameCh: "聯絡我們", nameEng: "Contact", showName: "A" },
+      ],
+    }
+  },
+  methods: {
+    getShowName(id) {
+      let menu = this.menus.filter((m) => m.id == id);
+    }
+  }
+}
 </script>
