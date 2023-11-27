@@ -13,7 +13,7 @@
     
             <p>承載屋主獨一無二生命故事的家。&nbsp; <span>
                         <nuxt-link :to="{ name: 'about' }">
-                            <i>More</i>  
+                            More
                         </nuxt-link>
                     </span></p>
         </div>
@@ -29,7 +29,7 @@
             <p>風水與室內設計，兼顧美感又不會突兀，讓風水老師與室內設計師的矛盾不再上演。
                 &nbsp; <span>
                         <nuxt-link :to="{ name: 'fengshui' }">
-                           <i>More</i>  
+                           More
                         </nuxt-link>
                     </span>
             </p>

@@ -2,9 +2,9 @@
     <div class="text-center m-3">
         <h4>{{ titleEng }} &nbsp;  
             
-            <span class="subTitle"> <i>{{ subTitle }}</i></span></h4>
+            <span class="subTitle">{{ subTitle }}</span></h4>
        
-        <p ><i>{{ titleCh }}</i> </p>
+        <p >{{ titleCh }} </p>
     </div>
 </template>
 

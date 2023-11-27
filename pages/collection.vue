@@ -3,7 +3,7 @@
         <BreadCrumb currentBread="Project" pageName="collection"></BreadCrumb>
         <div class="mt-5 mb-5">
             <Title titleEng="Project" titleCh="設計作品"></Title>
-            <div class="d-flex">
+            <div class="row">
                 <Card></Card>
                 <Card></Card>
             </div>
