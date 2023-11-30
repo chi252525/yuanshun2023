@@ -9,10 +9,10 @@
             </b-navbar-brand>
             <b-navbar-toggle target="navbar-toggle-collapse">
                 <template #default="{ expanded }">
-                <div class="icon p-1">
-                <b-icon v-if="expanded" variant="light" icon="chevron-bar-up"></b-icon>
-                <b-icon v-else variant="light" icon="chevron-bar-down"></b-icon>
-              </div>
+                        <div class="icon p-1">
+                        <b-icon v-if="expanded" variant="light" icon="chevron-bar-up"></b-icon>
+                        <b-icon v-else variant="light" icon="chevron-bar-down"></b-icon>
+                      </div>
 </template>
         </b-navbar-toggle>
         <!-- Right aligned nav items -->
@@ -20,7 +20,7 @@
           <b-navbar-nav class="ml-auto">
             <b-nav-item v-for="m in menus" :menu="m" :key="m.id" right>
               <nuxt-link :to="{ name: m.name }">
-                <span>{{ m.nameEng }}</span> &nbsp;
+                <span @mouseover="">{{ m.nameEng }}</span> &nbsp;
               </nuxt-link>
             </b-nav-item>
           </b-navbar-nav>
@@ -41,6 +41,10 @@
 a,
 a:hover {
     color: #ffffff;
+}
+
+a {
+    transition: opacity 0.5s;
 }
 </style>
 
