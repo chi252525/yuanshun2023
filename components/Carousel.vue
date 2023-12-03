@@ -10,7 +10,7 @@
   >
     <b-carousel-slide
       caption="First Slide"
-      img-src="https://picsum.photos/1024/480/?image=10"
+      img-src="~/assets/img/collection/雅緻生活-05.jpg"
     ></b-carousel-slide>
     <b-carousel-slide
       caption="Second Slide"

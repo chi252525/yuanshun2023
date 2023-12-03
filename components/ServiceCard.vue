@@ -22,7 +22,7 @@
 export default {
     props: {
         serviceFlow: {
-            type: Array,
+            type: Object,
             required: true
         },
     },

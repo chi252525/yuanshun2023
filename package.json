@@ -3,15 +3,20 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt --port=3013",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "dev": "cross-env NODE_ENV=dev nuxt --port 3013",
+    "sit": "cross-env NODE_ENV=sit nuxt --port 3013",
+    "prod": "cross-env NODE_ENV=prod nuxt --port 3013",
+    "build": "cross-env NODE_ENV=prod nuxt build",
+    "build_SIT": "cross-env NODE_ENV=sit nuxt build",
+    "start": "cross-env NODE_ENV=prod nuxt start",
+    "start_SIT": "cross-env NODE_ENV=sit nuxt start"
   },
   "dependencies": {
     "bootstrap": "^4.1.1",
     "bootstrap-vue": "^2.23.1",
     "core-js": "^3.25.3",
+    "cross-env": "^7.0.3",
     "nuxt": "^2.15.8",
     "nuxt-start": "^2.17.2",
     "sass": "^1.69.5",

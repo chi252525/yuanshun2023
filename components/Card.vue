@@ -1,12 +1,12 @@
 <template>
     <div class="col-lg-6 col-md-12 p-3 text-center">
         <div class="pic">
-            <img src="https://picsum.photos/500/500/?image=10" alt="">
+            <img src="~/assets/img/collection/雅緻生活-05.jpg" alt="">
         </div>
         <div class="text-center mt-2">
-            <p>華固名鑄
+            <p>雅緻生活
             </p>
-            <p>大坪數 / 現代風格 / 藝術收藏</p>
+            <p>大坪數 / 現代風格 / 新成屋</p>
         </div>
     </div>
 </template>
@@ -20,6 +20,8 @@
 .pic img {
     transform: scale(1, 1);
     transition: all 1s ease-out;
+    // width: 500px;
+    height:500px;
 }
 
 .pic img:hover {
