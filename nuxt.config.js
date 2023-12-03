@@ -1,3 +1,5 @@
+console.log(process.env.NODE_ENV,"nuxt.config.js")
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {

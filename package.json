@@ -10,13 +10,19 @@
     "build": "cross-env NODE_ENV=prod nuxt build",
     "build_SIT": "cross-env NODE_ENV=sit nuxt build",
     "start": "cross-env NODE_ENV=prod nuxt start",
-    "start_SIT": "cross-env NODE_ENV=sit nuxt start"
+    "start_SIT": "cross-env NODE_ENV=sit nuxt start",
+    "test":"jest",
+    "pm2_setup": "pm2 deploy prod setup",
+    "pm2_setup_SIT": "pm2 deploy sit setup",
+    "pm2_deploy": "pm2 deploy ecosystem.config.js prod --force",
+    "pm2_deploy_SIT": "pm2 deploy ecosystem.config.js sit --force"
   },
   "dependencies": {
     "bootstrap": "^4.1.1",
     "bootstrap-vue": "^2.23.1",
     "core-js": "^3.25.3",
     "cross-env": "^7.0.3",
+    "jest": "^29.7.0",
     "nuxt": "^2.15.8",
     "nuxt-start": "^2.17.2",
     "sass": "^1.69.5",

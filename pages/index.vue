@@ -1,18 +1,23 @@
 <template>
- <div>
-  <Carousel></Carousel>
-  <Introduction></Introduction>
- </div>
+    <div>
+        <Carousel></Carousel>
+        <Introduction></Introduction>
+    </div>
 </template>
+
 <style lang="scss">
 @import '~/assets/scss/demo.scss';
-
 </style>
-<script>
 
+<script>
 import Carousel from '~/components/Carousel.vue'
 import Introduction from '~/components/Introduction.vue'
 export default {
-  name: 'IndexPage',
+    name: 'IndexPage',
+    methods: {
+        created() {
+            console.log(process.env.NODE_ENV, "index.html")
+        }
+    }
 }
 </script>

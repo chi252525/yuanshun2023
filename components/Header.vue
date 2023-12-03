@@ -1,18 +1,20 @@
 <template>
     <div>
+      <client-only>
         <b-navbar toggleable="lg">
+    
             <b-navbar-brand href="#">
                 <nuxt-link :to="{ name: 'index' }">
                     <img src="https://hemusih.com/yuan-shun-interior-design/images/yuan/logo2.png" width="130" class="d-inline-block align-top" alt="Kitten">
                 </nuxt-link>
-    
             </b-navbar-brand>
+    
             <b-navbar-toggle target="navbar-toggle-collapse">
                 <template #default="{ expanded }">
-                                                                                                        <div class="icon p-1">
-                                                                                                        <b-icon v-if="expanded" variant="light" icon="chevron-bar-up"></b-icon>
-                                                                                                        <b-icon v-else variant="light" icon="chevron-bar-down"></b-icon>
-                                                                                                      </div>
+                                                                                                            <div class="icon p-1">
+                                                                                                            <b-icon v-if="expanded" variant="light" icon="chevron-bar-up"></b-icon>
+                                                                                                            <b-icon v-else variant="light" icon="chevron-bar-down"></b-icon>
+                                                                                                          </div>
 </template>
         </b-navbar-toggle>
         <!-- Right aligned nav items -->
@@ -33,6 +35,7 @@
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
+    </client-only>
     </div>
 </template>
 
@@ -91,7 +94,7 @@ export default {
                 console.log('out');
                 this.animated = ['']
                 this.menus[id].active = false;
-                
+
             }, 300);
         }
     }

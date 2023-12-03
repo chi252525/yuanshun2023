@@ -1,5 +1,6 @@
 <template>
     <div>
+      <client-only>
   <b-carousel
     id="carousel-fade"
     style="text-shadow: 0px 0px 2px #000"
@@ -9,10 +10,6 @@
     img-height="480"
   >
     <b-carousel-slide
-      caption="First Slide"
-      img-src="~/assets/img/collection/雅緻生活-05.jpg"
-    ></b-carousel-slide>
-    <b-carousel-slide
       caption="Second Slide"
       img-src="https://picsum.photos/1024/480/?image=12"
     ></b-carousel-slide>
@@ -21,5 +18,6 @@
       img-src="https://picsum.photos/1024/480/?image=22"
     ></b-carousel-slide>
   </b-carousel>
+</client-only>
 </div>
 </template>

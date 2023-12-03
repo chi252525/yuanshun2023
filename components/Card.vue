@@ -1,7 +1,7 @@
 <template>
     <div class="col-lg-6 col-md-12 p-3 text-center">
         <div class="pic">
-            <img src="~/assets/img/collection/雅緻生活-05.jpg" alt="">
+            <img src="" alt="">
         </div>
         <div class="text-center mt-2">
             <p>雅緻生活
