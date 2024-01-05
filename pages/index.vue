@@ -1,6 +1,9 @@
 <template>
     <div>
-        <Carousel></Carousel>
+        <div class="container">
+            <Carousel></Carousel>
+        </div>
+       
         <Introduction></Introduction>
     </div>
 </template>

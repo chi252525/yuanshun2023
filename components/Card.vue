@@ -1,12 +1,15 @@
 <template>
     <div class="col-lg-6 col-md-12 p-3 text-center">
         <div class="pic">
-            <img src="" alt="">
+            <a :href="info.link" target="_blank">
+                    <!-- <img :src="'/_nuxt/assets/img/collection/'+info.imgLink" :alt="info.title"> -->
+                    <img src="~/assets/img/collection/01.jpg" :alt="info.title">
+                </a>
         </div>
         <div class="text-center mt-2">
-            <p>雅緻生活
+            <p>{{ info.title }}
             </p>
-            <p>大坪數 / 現代風格 / 新成屋</p>
+            <p>{{ info.subTitle }}</p>
         </div>
     </div>
 </template>
@@ -19,9 +22,8 @@
 
 .pic img {
     transform: scale(1, 1);
-    transition: all 1s ease-out;
-    // width: 500px;
-    height:500px;
+    transition: all 1s ease-out; // width: 500px;
+    height: 400px;
 }
 
 .pic img:hover {
@@ -32,5 +34,12 @@
 </style>
 
 <script>
-
+export default {
+    props: {
+        info: {
+            type: Object,
+            required: true
+        },
+    }
+}
 </script>

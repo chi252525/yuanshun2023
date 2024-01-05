@@ -1,17 +1,24 @@
 <template>
-    <div class="text-center m-3">
-        <h4>{{ titleEng }} &nbsp;  
-            
-            <span class="subTitle">{{ subTitle }}</span></h4>
-       
-        <p >{{ titleCh }} </p>
+    <div class="m-3">
+        <div class="text-center">
+            <span class="title" v-if="titleEng">{{ titleEng }}&nbsp;</span>
+            <span class="subTitle">{{ subTitle }}</span>
+        </div>
+        <div class="text-center">
+            <p>{{ titleCh }} </p>
+        </div>
+        <hr>
     </div>
 </template>
 
 <style lang="scss" scoped>
 .subTitle {
-    background: rgb(236, 240, 241);
     font-size: 30px;
+    font-weight: 400;
+}
+
+.title {
+    font-size: 20px;
 }
 </style>
 

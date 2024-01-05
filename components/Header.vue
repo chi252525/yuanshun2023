@@ -1,20 +1,22 @@
 <template>
     <div>
-      <client-only>
-        <b-navbar toggleable="lg">
+        <client-only>
+            <b-navbar toggleable="lg">
     
-            <b-navbar-brand href="#">
-                <nuxt-link :to="{ name: 'index' }">
-                    <img src="https://hemusih.com/yuan-shun-interior-design/images/yuan/logo2.png" width="130" class="d-inline-block align-top" alt="Kitten">
-                </nuxt-link>
-            </b-navbar-brand>
+                <b-navbar-brand class="px-lg-5 px-md-0" href="#">
+                    <nuxt-link :to="{ name: 'index' }">
+                        <img src="~assets/img/yuanshun.png" width="130" class="d-inline-block align-top" alt="Kitten">
+                    </nuxt-link>
+                </b-navbar-brand>
     
-            <b-navbar-toggle target="navbar-toggle-collapse">
-                <template #default="{ expanded }">
-                                                                                                            <div class="icon p-1">
-                                                                                                            <b-icon v-if="expanded" variant="light" icon="chevron-bar-up"></b-icon>
-                                                                                                            <b-icon v-else variant="light" icon="chevron-bar-down"></b-icon>
-                                                                                                          </div>
+                <b-navbar-toggle target="navbar-toggle-collapse">
+                    <template #default="{ expanded }">
+                                                        <div v-if="expanded" class="icon p-1">
+                                                          <b-icon  variant="dark" icon="chevron-bar-up"></b-icon>
+                                                        </div >
+                                                          <div  v-else class="icon p-1">
+                                                          <b-icon variant="dark" icon="chevron-bar-down"></b-icon>
+                                                        </div>
 </template>
         </b-navbar-toggle>
         <!-- Right aligned nav items -->
@@ -22,11 +24,11 @@
           <b-navbar-nav class="ml-auto ">
 <template v-for="m in menus" :menu="m">
     <b-nav-item right>
-        <div class="linkItem pr-2 pl-2" :class="animated" @mouseenter="mouseenter(m.id)" @mouseleave="mouseleave(m.id)">
+        <div class=" pr-2 pl-2" :class="animated" @mouseenter="mouseenter(m.id)" @mouseleave="mouseleave(m.id)">
             <nuxt-link :to="{ name: m.name }">
                 <div>
-                    <span v-show="m.active">{{ m.nameCh }}</span>
-                    <span v-show="!m.active">{{ m.nameEng }} </span>
+                    <span class="linkItemCh" v-show="m.active">{{ m.nameCh }}</span>
+                    <span class="linkItem" v-show="!m.active">{{ m.nameEng }} </span>
                 </div>
             </nuxt-link>
         </div>
@@ -36,21 +38,25 @@
         </b-collapse>
       </b-navbar>
     </client-only>
-    </div>
+  </div>
 </template>
 
 <style scoped>
 .navbar {
-    background-color: black !important
+    background-color: #ffffff !important
+}
+
+.navbar-light .navbar-toggler {
+    border-color: #ffffff
 }
 
 .icon {
-    border: 1px solid #ffffff;
+    border: 1px solid #000000;
 }
 
 a,
 a:hover {
-    color: #ffffff;
+    color: #000000;
 }
 
 a {
@@ -59,7 +65,20 @@ a {
 
 .animated {
     transition: all 0.5s ease-in-out;
-    /* background-color: blue; */
+}
+
+.linkItem {
+    font-weight: 400;
+    color: #010101
+}
+
+.linkItemCh {
+    font-weight: 400;
+    color: #FDB710
+}
+
+.navbar-collapse {
+    padding-right: 50px;
 }
 </style>
 
@@ -81,7 +100,6 @@ export default {
         mouseenter: function(id) {
 
             setTimeout(() => {
-                console.log('in');
 
                 this.animated = ['animated']
                 this.menus[id].active = !this.menus[id].active;
@@ -91,7 +109,6 @@ export default {
         mouseleave: function(id) {
 
             setTimeout(() => {
-                console.log('out');
                 this.animated = ['']
                 this.menus[id].active = false;
 

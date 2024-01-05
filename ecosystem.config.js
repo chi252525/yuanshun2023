@@ -19,16 +19,16 @@ module.exports = {
 
   }],
     deploy: {
-      "sit": {
-        "user": "chuenningyeh", //linux 登入帳號 帳號@ip
-        "host": ["35.221.131.221"], //你的伺服器 ip
+      "prod": {
+        "user": "yuanshun2023", //linux 登入帳號 帳號@ip
+        "host": ["34.80.127.136"], //你的伺服器 ip
         "ref": "origin/master", //分支
         "repo": "git@gitlab.com:yuanshun/yuanshun2023.git", //ssh 的 git
         "path": "/home/yuanshun2023/yuanshun2023", //伺服器上的路徑
         "post-deploy":
-          "npm install && npm run build_SIT && pm2 reload ecosystem.config.js --env sit", //佈署指令
+          "nvm use v20.9.0 &&npm install --ignore-scripts && npm run build && pm2 reload ecosystem.config.js --env prod --only yuanshun2023_prod", //佈署指令
         "env"  : {
-          "NODE_ENV": "sit"
+          "NODE_ENV": "prod"
         }
       }
     }

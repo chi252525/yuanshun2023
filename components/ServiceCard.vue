@@ -1,19 +1,21 @@
 <template>
-    <div class="d-flex">
+    <div class="d-flex px-5 service-box">
         <div>
-            <div class="d-flex">
+            <div class="d-flex ">
                 <div class="step">
-                    <h2>Step {{serviceFlow.id}}</h2> 
+                    <h3>Step {{serviceFlow.id}}</h3>
                 </div>
                 <div class="word">
-                    <h4>{{serviceFlow.name}}</h4>
+                    <h5>{{serviceFlow.name}}</h5>
                 </div>
             </div>
             <div class="slash">
             </div>
         </div>
-        <div class="description">
-            <p>{{serviceFlow.description}}</p>
+        <div class="description px-5">
+            <div>
+                <p>{{serviceFlow.description}}</p>
+            </div>
         </div>
     </div>
 </template>
@@ -31,33 +33,15 @@ export default {
 </script>
 
 <style>
-.step {
-    /* border:solid 1px; */
-    width: 100px;
-    height: 50px;
-}
+/* div{
+    border: solid 1px;
+} */
 
-.slash {
-    position: relative;
-    top: 5px;
-    left: 50px;
-    bottom: 80px;
-    /* right: 300px; */
-    width: 100px;
-    height: 100px;
-    transform: rotate(45deg);
-    border-left-style: dotted;
-    /* border-left:  thick rgb(26, 186, 26); */
-}
 
-.word {
-    position: relative;
-    top: 80px;
-}
 
 .description {
-    position: relative;
-    padding-left: 50px;
-    top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 </style>
