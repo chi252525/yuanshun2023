@@ -13,7 +13,8 @@
                             <h3>Step 1</h3>
                         </div>
                         <div class="word">
-                            <h5>初步接洽</h5>
+                            <h5>初步</h5>
+                            <h5>接洽</h5>
                         </div>
                     </div>
                     <div class="slash">
@@ -32,7 +33,8 @@
                             <h3>Step 2</h3>
                         </div>
                         <div class="word">
-                            <h5>設計委任</h5>
+                            <h5>設計</h5>
+                            <h5>委任</h5>
                         </div>
                     </div>
                     <div class="slash">
@@ -52,7 +54,8 @@
                             <h3>Step 3</h3>
                         </div>
                         <div class="word">
-                            <h5>工程合約</h5>
+                            <h5>工程</h5>
+                            <h5>合約</h5>
                         </div>
                     </div>
                     <div class="slash">
@@ -71,7 +74,8 @@
                             <h3>Step 4</h3>
                         </div>
                         <div class="word">
-                            <h5>家具軟裝</h5>
+                            <h5>家具</h5>
+                            <h5> 軟裝</h5>
                         </div>
                     </div>
                     <div class="slash">
@@ -90,7 +94,8 @@
                             <h3>Step 5</h3>
                         </div>
                         <div class="word">
-                            <h5>完工交屋</h5>
+                            <h5>完工</h5>
+                            <h5> 交屋</h5>
                         </div>
                     </div>
                     <div class="slash">
