@@ -27,7 +27,7 @@ export default {
     link: [{
       rel: 'icon',
       type: 'image/x-icon',
-      href: '/yuanshun.png'
+      href: '/favicon.ico'
     }],
     script: [{
       src: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.js'
