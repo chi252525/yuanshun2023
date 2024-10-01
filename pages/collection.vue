@@ -4,6 +4,23 @@
         <div class="mt-5 mb-5">
             <Title titleEng="Project" titleCh="設計作品"></Title>
             <div class="row">
+
+              <!-- ----------- -->
+              <div class="col-lg-6 col-md-12 p-3 text-center">
+                    <div class="pic">
+                        <a href="https://photos.app.goo.gl/DJBbpQpPASy59xg7A" target="_blank">
+                            <div>
+                                <img src="~/assets/img/collection/00.jpg" alt="希臘風美宅">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="text-center mt-2">
+                        <p>{{ '老宅翻新-希臘風跳色美宅' }}
+                        </p>
+                        <p>{{ '23年中古屋 / 希臘風 / 空間重塑與收納規劃' }}</p>
+                    </div>
+                </div>
+                <!-- ----------- -->
                 <div class="col-lg-6 col-md-12 p-3 text-center">
                     <div class="pic">
                         <a href="https://photos.app.goo.gl/Y5x8HV3H8iQaanJ77" target="_blank">
@@ -16,6 +33,21 @@
                         <p>{{ '小坪數新成屋—奶茶基調北歐童話' }}
                         </p>
                         <p>{{ '新成屋 / 北歐風 / 一房一廳' }}</p>
+                    </div>
+                </div>
+                <!-- ----------- -->
+                <div class="col-lg-6 col-md-12 p-3 text-center">
+                    <div class="pic">
+                        <a href="https://photos.app.goo.gl/BkvkieSs3bKeYk3E8" target="_blank">
+                            <div>
+                                <img src="~/assets/img/collection/01-1.jpg" alt="撞色南洋度假風">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="text-center mt-2">
+                        <p>{{ '新古屋部分翻新-撞色南洋度假風' }}
+                        </p>
+                        <p>{{ '5年新古屋 / 部分裝修 / 小宅' }}</p>
                     </div>
                 </div>
                 <!-- ----------- -->
