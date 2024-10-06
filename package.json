@@ -7,7 +7,7 @@
     "dev": "cross-env NODE_ENV=dev nuxt --port 3013",
     "sit": "cross-env NODE_ENV=sit nuxt --port 3013",
     "prod": "cross-env NODE_ENV=prod nuxt --port 3013",
-    "build": "cross-env NODE_ENV=prod nuxt build",
+    "build": "cross-env NODE_ENV=prod nuxt build --output public",
     "build_SIT": "cross-env NODE_ENV=sit nuxt build",
     "start": "cross-env NODE_ENV=prod nuxt start",
     "start_SIT": "cross-env NODE_ENV=sit nuxt start",
