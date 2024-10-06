@@ -71,5 +71,9 @@ export default {
     //   }
     // }},
     extractCSS: true
+  },
+  target: 'static', // 這會告訴 Nuxt 生成靜態文件
+  generate: {
+    dir: 'dist' // 這是靜態生成的文件夾
   }
 }
